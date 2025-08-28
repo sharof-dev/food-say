@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="138.622mm" height="138.622mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 272.61 272.61"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil0 {fill:#FC8038}
+    .fil1 {fill:#FEFDFB}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M136.31 0c75.28,0 136.31,61.03 136.31,136.31 0,75.28 -61.03,136.31 -136.31,136.31 -75.28,0 -136.31,-61.03 -136.31,-136.31 0,-75.28 61.03,-136.31 136.31,-136.31z"/>
+   </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M136.31 0c75.28,0 136.31,61.03 136.31,136.31 0,75.28 -61.03,136.31 -136.31,136.31 -75.28,0 -136.31,-61.03 -136.31,-136.31 0,-75.28 61.03,-136.31 136.31,-136.31z"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_2747533455520">
+    <g>
+     <path id="1" class="fil1" d="M123.21 54.68l0 0c2.25,0 4.09,1.98 4.09,4.4l0 58c0,14.25 3.2,28.23 -9.42,36.75 -6.31,4.26 -10.49,5.45 -11.29,10.6l0 109.96 -8.18 0 0 -109.96c-0.8,-5.15 -4.98,-6.34 -11.29,-10.6 -12.62,-8.52 -9.42,-22.5 -9.42,-36.75l0 -58c0,-2.42 1.84,-4.4 4.09,-4.4l0 0c2.25,0 4.09,1.98 4.09,4.4l0 58 12.53 0 0 -68.15c0,-2.51 1.84,-4.55 4.09,-4.55l0 0c2.25,0 4.09,2.05 4.09,4.55l0 68.15 12.54 0 0 -58c0,-2.42 1.84,-4.4 4.09,-4.4z"/>
+     <polygon class="fil1" points="195.28,54.94 158.99,131.94 158.99,166.22 180.52,166.22 180.52,265.18 195.22,263.76 "/>
+    </g>
+   </g>
+  </g>
+  <path class="fil2" d="M136.31 0c75.28,0 136.31,61.03 136.31,136.31 0,75.28 -61.03,136.31 -136.31,136.31 -75.28,0 -136.31,-61.03 -136.31,-136.31 0,-75.28 61.03,-136.31 136.31,-136.31z"/>
+ </g>
+</svg>

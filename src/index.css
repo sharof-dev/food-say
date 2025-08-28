@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Calibri, sans-srif";
+    src: url("./assets/fonts/calibri.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-calibri: Calibri, sans-srif;
+}
