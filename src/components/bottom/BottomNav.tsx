@@ -6,10 +6,10 @@ const BottomNav = () => {
     const path = pathname.split("/").filter(Boolean).pop() || "";
 
     return (
-        <div className="flex justify-around items-center bg-white mt-auto py-3 border-t">
+        <div className="flex justify-around items-center bg-white dark:bg-neutral-900 mt-auto py-3 dark:border-white/10 border-t border-black/10">
             <Link to={"/"}>
                 <button
-                    className={`flex flex-col items-center ${path === "" ? "text-orange-500" : "text-gray-700"
+                    className={`flex flex-col items-center ${path === "" ? "text-orange-500" : "text-gray-700 dark:text-gray-300"
                         }`}
                 >
                     <LayoutGrid size={24} />
@@ -18,7 +18,7 @@ const BottomNav = () => {
 
             <Link to={"/favourites"}>
                 <button
-                    className={`flex flex-col items-center ${path === "favourites" ? "text-orange-500" : "text-gray-700"
+                    className={`flex flex-col items-center ${path === "favourites" ? "text-orange-500" : "text-gray-700 dark:text-gray-300"
                         }`}
                 >
                     <Heart size={24} />
@@ -27,7 +27,7 @@ const BottomNav = () => {
 
             <Link to={"/profile"}>
                 <button
-                    className={`flex flex-col items-center ${path === "profile" ? "text-orange-500" : "text-gray-700"
+                    className={`flex flex-col items-center ${path === "profile" ? "text-orange-500" : "text-gray-700 dark:text-gray-300"
                         }`}
                 >
                     <User size={24} />

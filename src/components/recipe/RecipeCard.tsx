@@ -17,13 +17,13 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ title, description, image }) =>
           className="rounded-lg w-20 h-20 object-cover"
         />
       ) : (
-        <div className="bg-gray-200 rounded-lg w-20 h-20" />
+        <div className="bg-gray-200 dark:bg-neutral-700 rounded-lg w-20 h-20" />
       )}
 
       {/* Text */}
       <div className="ml-3">
         <h3 className="font-semibold text-lg">{title}</h3>
-        <p className="text-gray-500 text-sm">{description}</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm">{description}</p>
       </div>
     </div>
   );

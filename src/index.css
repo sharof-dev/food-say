@@ -8,3 +8,4 @@
 @theme {
     --font-calibri: Calibri, sans-srif;
 }
+:root { color-scheme: light dark; }

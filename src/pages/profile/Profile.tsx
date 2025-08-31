@@ -1,6 +1,7 @@
 import { useState, type FC } from "react";
 import ProfileHeader from "../../components/profileHeader/ProfileHeader"
 import { ChevronRight } from "lucide-react";
+import ThemeToggle from "../../components/theme/ThemeToggle";
 
 const Profile:FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,25 +18,8 @@ const Profile:FC = () => {
         {/* Dark Mode */}
         <div className="flex justify-between items-center">
           <span className="font-semibold text-lg">Dark Mode</span>
-          <label className="inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-              className="sr-only"
-            />
-            <div
-              className={`w-11 h-6 flex items-center rounded-full p-1 transition ${
-                darkMode ? "bg-green-500" : "bg-gray-300"
-              }`}
-            >
-              <div
-                className={`bg-white w-4 h-4 rounded-full shadow-md transform transition ${
-                  darkMode ? "translate-x-5" : "translate-x-0"
-                }`}
-              />
-            </div>
-          </label>
+            <ThemeToggle />
+            
         </div>
 
         {/* Menu Items */}

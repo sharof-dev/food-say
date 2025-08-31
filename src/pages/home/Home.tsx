@@ -5,7 +5,7 @@ import Header from "../../components/header/Header";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col bg-white dark:bg-neutral-900">
       <Header />
       {/* Recipes List */}
       <div className="flex flex-col gap-4 mt-6 px-4">
