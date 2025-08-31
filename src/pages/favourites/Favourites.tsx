@@ -1,5 +1,6 @@
 import { type FC } from 'react'
 import FavouriteCard from '../../components/Favourite/FavouriteCard'
+import Header from '../../components/header/Header'
 
 const favouriteData = [
   {
@@ -30,7 +31,8 @@ const favouriteData = [
 
 const Favourites: FC = () => {
   return (
-    <div className='flex flex-col gap-4 mt-8'>
+    <div className='flex flex-col gap-4'>
+      <Header />
       {
         favouriteData.map((item) => (
           <FavouriteCard title={item.title} image={item.image} />

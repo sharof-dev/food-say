@@ -8,7 +8,6 @@ const Header = () => {
                 <h1 className="font-bold text-xl text-center">Recipes for You</h1>
             </div>
             <div className="px-4">
-                
                     <SearchInput />
             </div>
         </div>

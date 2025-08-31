@@ -4,7 +4,7 @@ import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="w-full font-calibri">
       <RouterProvider router={AppRoutes} />
     </div>
   )

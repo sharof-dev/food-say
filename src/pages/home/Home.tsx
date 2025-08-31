@@ -1,10 +1,12 @@
 import React from "react";
 // import { ArrowLeft, Search, X, Grid, Heart, User } from "lucide-react";
 import RecipeCard from "../../components/recipe/RecipeCard";
+import Header from "../../components/header/Header";
 
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col bg-white">
+      <Header />
       {/* Recipes List */}
       <div className="flex flex-col gap-4 mt-6 px-4">
         <RecipeCard title="Avocado Salad" description="91 lips · 1.05 g" />
