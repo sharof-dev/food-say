@@ -4,6 +4,11 @@ import RecipeCard from "../../components/recipe/RecipeCard";
 import Header from "../../components/header/Header";
 
 const Home: React.FC = () => {
+
+  const theme = localStorage.getItem("theme")
+  console.log(theme);
+  
+
   return (
     <div className="flex flex-col bg-white dark:bg-neutral-900">
       <Header />

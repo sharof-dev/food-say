@@ -34,8 +34,8 @@ const Favourites: FC = () => {
     <div className='flex flex-col gap-4'>
       <Header />
       {
-        favouriteData.map((item) => (
-          <FavouriteCard title={item.title} image={item.image} />
+        favouriteData.map((item,i) => (
+          <FavouriteCard title={item.title} key={i} image={item.image} />
         ))
       }
     </div>
