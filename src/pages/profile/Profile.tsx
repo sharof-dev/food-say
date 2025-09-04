@@ -1,10 +1,8 @@
 import { useState, type FC } from "react";
-import ProfileHeader from "../../components/profileHeader/ProfileHeader"
 import { ChevronRight } from "lucide-react";
 import ThemeToggle from "../../components/theme/ThemeToggle";
 
 const Profile:FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className="flex flex-col">

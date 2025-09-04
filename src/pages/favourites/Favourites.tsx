@@ -1,6 +1,5 @@
 import { type FC } from 'react'
 import FavouriteCard from '../../components/Favourite/FavouriteCard'
-import Header from '../../components/header/Header'
 
 const favouriteData = [
   {

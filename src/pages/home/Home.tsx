@@ -1,7 +1,6 @@
 import React from "react";
 // import { ArrowLeft, Search, X, Grid, Heart, User } from "lucide-react";
 import RecipeCard from "../../components/recipe/RecipeCard";
-import Header from "../../components/header/Header";
 
 const Home: React.FC = () => {
 
