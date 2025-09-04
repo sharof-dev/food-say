@@ -1,6 +1,5 @@
 
 import SearchInput from '../search/Search';
-import ThemeToggle from '../theme/ThemeToggle';
 
 const Header = () => {
     return (

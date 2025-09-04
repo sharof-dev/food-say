@@ -1,4 +1,4 @@
-import { useState, type FC } from "react";
+import {  type FC } from "react";
 import { ChevronRight } from "lucide-react";
 import ThemeToggle from "../../components/theme/ThemeToggle";
 
