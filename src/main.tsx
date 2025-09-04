@@ -1,18 +1,12 @@
-import React, { StrictMode } from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { initTheme } from "./utils/theme";
+import "./index.css";
 
-const root = document.getElementById("root") as HTMLElement;
+initTheme(); // 🔥 Muhim!
 
-// Dark mode toggle qilish
-if (localStorage.theme === "dark") {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
-
-ReactDOM.createRoot(root).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

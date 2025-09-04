@@ -47,7 +47,7 @@ const SearchInput = () => {
         <div className="w-full">
             {/* Search input */}
             <div className="relative">
-                <div className="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-xl">
+                <div className="flex items-center gap-2 bg-gray-100 dark:bg-neutral-800 px-3 py-2 rounded-xl">
                     <Search size={18} className="text-gray-500" />
                     <input
                         type="text"
@@ -59,12 +59,12 @@ const SearchInput = () => {
                 </div>
                 {/* Dropdown */}
                 {filtered.length > 0 && (
-                    <ul className="z-10 absolute bg-white shadow-md mt-1 border rounded-xl w-full">
+                    <ul className="z-10 absolute bg-white dark:bg-neutral-700 shadow-md mt-1 border rounded-xl w-full">
                         {filtered.map((item, idx) => (
                             <li
                                 key={idx}
                                 onClick={() => handleSelect(item)}
-                                className="hover:bg-gray-100 px-4 py-2 cursor-pointer"
+                                className="hover:bg-gray-100 dark:hover:bg-neutral-600 px-4 py-2 dark:text-white cursor-pointer"
                             >
                                 {item}
                             </li>
@@ -74,7 +74,7 @@ const SearchInput = () => {
             </div>
 
             {/* Selected chips */}
-            <div className="flex flex-col flex-wrap gap-2 mt-4">
+            <div className="flex flex-col flex-wrap gap-2 mt-2">
                 <h2 className="mb-3 font-bold text-lg">Ingredients</h2>
                 <div className="flex flex-wrap gap-2">
                     {selected.map((item, idx) => (

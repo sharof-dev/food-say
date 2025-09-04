@@ -7,7 +7,6 @@ const Header = () => {
         <div>
             <div className="flex justify-between items-center p-4">
                 <h1 className="font-bold text-xl">Recipes for You</h1>
-                <ThemeToggle />
             </div>
             <div className="px-4">
                     <SearchInput />

@@ -1,37 +1,84 @@
-
 import { createBrowserRouter } from "react-router-dom";
-import { lazy } from "react";
-const Home = lazy(() => import('../pages/home/Home'));
-const Favourites = lazy(() => import('../pages/favourites/Favourites'));
-const Profile = lazy(() => import('../pages/profile/Profile'));
-// import ProtectedRoute from "./ProtectedRoute";
-import Splash from "../pages/splash/Splash";
-import Onboarding from "../pages/onboarding/Onboarding";
-import SignUp from "../features/pages/SignUp";
-import SignIn from "../features/pages/SignIn";
-import MainLayout from "../layout/MainLayout";
+import { lazy, Suspense } from "react";
 
-// const isAuthenticated = true;
+const Home = lazy(() => import("../pages/home/Home"));
+const Favourites = lazy(() => import("../pages/favourites/Favourites"));
+const Profile = lazy(() => import("../pages/profile/Profile"));
+const Splash = lazy(() => import("../pages/splash/Splash"));
+const Onboarding = lazy(() => import("../pages/onboarding/Onboarding"));
+const SignUp = lazy(() => import("../features/pages/SignUp"));
+const SignIn = lazy(() => import("../features/pages/SignIn"));
+const MainLayout = lazy(() => import("../layout/MainLayout"));
+
+const Loader = () => <div>Loading...</div>;
 
 const AppRoutes = createBrowserRouter([
-    {
-        path: '/',
-        element: <MainLayout />,
-        children: [
-            {
-                index: true,
-                element: <Home />
-            },
-            { path: '/favourites', element: <Favourites /> },
-            { path: '/profile', element: <Profile /> },
-        ]
-    },
-    {path: '/splash', element: <Splash />},
-    {path: '/onboarding', element: <Onboarding />},
-    {path: '/sign-up', element: <SignUp />},
-    { path: '/sign-in', element: <SignIn /> },
-    { path: '/favourites', element: <Favourites /> },
-    { path: '/profile', element: <Profile /> },
-])
+  {
+    path: "/",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <MainLayout />
+      </Suspense>
+    ),
+    children: [
+      {
+        index: true,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "favourites",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Favourites />
+          </Suspense>
+        ),
+      },
+      {
+        path: "profile",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Profile />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/splash",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <Splash />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/onboarding",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <Onboarding />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/sign-up",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <SignUp />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/sign-in",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <SignIn />
+      </Suspense>
+    ),
+  },
+]);
 
 export default AppRoutes;

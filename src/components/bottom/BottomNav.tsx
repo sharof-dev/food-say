@@ -6,7 +6,7 @@ const BottomNav = () => {
     const path = pathname.split("/").filter(Boolean).pop() || "";
 
     return (
-        <div className="flex justify-around items-center bg-white dark:bg-neutral-900 mt-auto py-3 dark:border-white/10 border-t border-black/10">
+        <div className="flex justify-around items-center bg-white dark:bg-neutral-800 mt-auto py-3 dark:border-white/10 border-t border-black/10">
             <Link to={"/"}>
                 <button
                     className={`flex flex-col items-center ${path === "" ? "text-orange-500" : "text-gray-700 dark:text-gray-300"

@@ -1,15 +1,23 @@
-import React from "react";
+import React, { type FormEvent } from "react";
 import AuthInput from "../../components/input/AuthInput";
 import { Mail, Lock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const SignIn: React.FC = () => {
+
+  const navigate = useNavigate()
+
+  const Sign = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    navigate("/")
+  }
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="bg-white p-6 rounded-2xl w-full max-w-sm">
         <h2 className="mb-2 font-bold text-2xl text-center">Welcome Back!</h2>
         <p className="mb-6 text-gray-500 text-center">Please enter your account here</p>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onClick={Sign}>
           <AuthInput placeholder="Email or phone number" icon={<Mail size={18} />} />
           <AuthInput type="password" placeholder="Password" icon={<Lock size={18} />} />
 
@@ -30,6 +38,7 @@ const SignIn: React.FC = () => {
 
           <button
             type="button"
+            
             className="flex justify-center items-center gap-2 bg-red-500 hover:bg-red-600 py-3 rounded-xl w-full font-semibold text-white transition"
           >
             <span className="bg-white px-2 py-1 rounded-full font-bold text-red-500">G</span>
@@ -38,7 +47,7 @@ const SignIn: React.FC = () => {
 
           <p className="text-gray-500 text-sm text-center">
             Don’t have any account?{" "}
-            <a href="/signup" className="font-medium text-green-500 hover:underline">
+            <a href="/sign-up" className="font-medium text-green-500 hover:underline">
               Sign Up
             </a>
           </p>

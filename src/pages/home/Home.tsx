@@ -11,9 +11,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col bg-white dark:bg-neutral-900">
-      <Header />
-      {/* Recipes List */}
-      <div className="flex flex-col gap-4 mt-6 px-4">
+      <div className="flex flex-col gap-4 mt-4 px-4">
         <RecipeCard title="Avocado Salad" description="91 lips · 1.05 g" />
         <RecipeCard title="Avocado Salad" description="91 lips · 1.05 g" />
         <RecipeCard title="Avocado Salad" description="91 lips · 1.05 g" />

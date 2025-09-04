@@ -1,17 +1,23 @@
-import React from "react";
+import React, { type FormEvent } from "react";
 import AuthInput from "../../components/input/AuthInput";
 import { Mail, Lock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const SignUp: React.FC = () => {
+    const navigate = useNavigate()
+    const Sign = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        navigate("/sign-in")
+      }
     return (
         <div className="flex flex-col items-center bg-gray-50 p-6 w-full min-h-screen">
             <div className="">
-                <h2 className="mb-2 font-bold text-2xl text-center">Welcome!</h2>
+                <h2 className="mb-2 font-bold text-gray-500 text-2xl text-center">Welcome!</h2>
                 <p className="mb-6 text-gray-500 text-center">Please enter your account here</p>
             </div>
 
             <div className="flex flex-col justify-between w-full">
-                <form className="flex flex-col space-y-4">
+                <form className="flex flex-col space-y-4" onClick={Sign}>
                     <AuthInput placeholder="Email or phone number" icon={<Mail size={18} />} />
                     <AuthInput type="password" placeholder="Password" icon={<Lock size={18} />} />
 
