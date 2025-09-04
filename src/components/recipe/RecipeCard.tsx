@@ -8,7 +8,7 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ title, description, image }) => {
   return (
-    <div className="flex items-center bg-gray-50 shadow-sm p-3 rounded-xl dar">
+    <div className="flex items-center bg-gray-50 dark:bg-neutral-700 shadow-sm p-3 rounded-xl dar">
       {/* Image placeholder */}
       {image ? (
         <img
